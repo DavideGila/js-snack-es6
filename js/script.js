@@ -78,12 +78,17 @@ const students = [
     },
 ]
 
+let studentsName = students.map((element) =>{
+    return element.name.toUpperCase();
+})
+console.log(studentsName);
+
 let grades = students.filter((element) => {
     return element.grades > 70;
 })
 console.log(grades);
 
-let grades2 = students.filter((element) => {
+let gradesAndIds = students.filter((element) => {
     return element.grades > 70 && element.id > '120';
 })
-console.log(grades2);
+console.log(gradesAndIds);
