@@ -26,9 +26,10 @@
 // 120 Francesca da Polenta    84
 
 // SNACK 1 //
-
+// lista degli invitati
 const vip = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin'];
 
+// assegnazione posti a sedere per ogni invitato
 let list = vip.map((element, index) => {
     return {
         tableName: 'Tavolo VIP',
@@ -39,7 +40,7 @@ let list = vip.map((element, index) => {
 console.log(list);
 
 // SNACK 2 //
-
+// lista studendi con rispettivi ID, Nomi e Voti
 const students = [
     {
         id: '213',
@@ -78,16 +79,20 @@ const students = [
     },
 ]
 
+// tutti i nomi degli studenti appariranno in maiuscolo
 let studentsName = students.map((element) =>{
     return element.name.toUpperCase();
 })
 console.log(studentsName);
 
+
+// lista degli studenti con voto maggiore di 70
 let grades = students.filter((element) => {
     return element.grades > 70;
 })
 console.log(grades);
 
+// lista degli studenti con voto maggiore di 70 e con ID maggiore di 120
 let gradesAndIds = students.filter((element) => {
     return element.grades > 70 && element.id > '120';
 })
