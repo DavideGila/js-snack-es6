@@ -139,3 +139,22 @@ const lightWeight = Math.min(...weight);
 
 const minorWeight = `Il peso minore è ${lightWeight}`;
 console.log(minorWeight);
+
+//SNACK 4//
+const soccerTeam = [
+    {
+        nome: 'Milan',
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+    {
+        nome: 'Juventus',
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+    {
+        nome: 'Inter',
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+];
