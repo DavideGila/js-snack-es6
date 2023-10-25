@@ -167,10 +167,8 @@ soccerTeam.forEach((element, index) => {
     const {puntiFatti} = soccerTeam[index];
     element.falliSubiti = getRndInteger(1,30);
     const {falliSubiti} = soccerTeam[index];
-    console.log({nome});
-    console.log({puntiFatti});
-    console.log({falliSubiti});
-    nameFoulsSoccer.push({nome}, {falliSubiti},)
+    console.log({nome, puntiFatti,falliSubiti});
+    nameFoulsSoccer.push({nome, falliSubiti})
 });
 console.log(nameFoulsSoccer);
 
