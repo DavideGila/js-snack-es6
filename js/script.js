@@ -158,3 +158,19 @@ const soccerTeam = [
         falliSubiti: 0
     },
 ];
+
+soccerTeam.forEach((element, index) => {
+    const {nome} = soccerTeam[index]
+    element.puntiFatti = getRndInteger(1,30);
+    const {puntiFatti} = soccerTeam[index];
+    element.falliSubiti = getRndInteger(1,30);
+    const {falliSubiti} = soccerTeam[index];
+    console.log({nome});
+    console.log({puntiFatti});
+    console.log({falliSubiti});
+});
+
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+};
