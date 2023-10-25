@@ -135,10 +135,7 @@ bike.forEach((element, index) => {
     console.log({peso});
 });
 
-console.log(weight);
-
 const lightWeight = Math.min(...weight);
-console.log(lightWeight);
 
 const minorWeight = `Il peso minore è ${lightWeight}`;
 console.log(minorWeight);
