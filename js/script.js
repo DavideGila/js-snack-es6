@@ -159,8 +159,6 @@ const soccerTeam = [
     },
 ];
 
-const nameFoulsSoccer = [];
-
 soccerTeam.forEach((element, index) => {
     const {nome} = soccerTeam[index]
     element.puntiFatti = getRndInteger(1,30);
@@ -168,8 +166,8 @@ soccerTeam.forEach((element, index) => {
     element.falliSubiti = getRndInteger(1,30);
     const {falliSubiti} = soccerTeam[index];
     console.log({nome, puntiFatti,falliSubiti});
-    nameFoulsSoccer.push({nome, falliSubiti})
 });
+const nameFoulsSoccer = soccerTeam.map(({nome, falliSubiti}) => ({nome, falliSubiti}));
 console.log(nameFoulsSoccer);
 
 
