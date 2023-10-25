@@ -165,7 +165,7 @@ soccerTeam.forEach((element, index) => {
     const {puntiFatti} = soccerTeam[index];
     element.falliSubiti = getRndInteger(1,30);
     const {falliSubiti} = soccerTeam[index];
-    console.log({nome, puntiFatti,falliSubiti});
+    console.log({nome, puntiFatti, falliSubiti});
 });
 const nameFoulsSoccer = soccerTeam.map(({nome, falliSubiti}) => ({nome, falliSubiti}));
 console.log(nameFoulsSoccer);
@@ -173,4 +173,11 @@ console.log(nameFoulsSoccer);
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
+};
+
+let div = document.querySelector('div');
+for (let i = 0; i < nameFoulsSoccer.length; i++) {
+    let p = document.createElement('p');
+    div.append(p);
+    p.innerHTML = `Nome squadra: ${nameFoulsSoccer[i].nome} e Falli subiti: ${nameFoulsSoccer[i].falliSubiti}`;
 };
