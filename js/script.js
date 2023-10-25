@@ -179,5 +179,5 @@ let div = document.querySelector('div');
 for (let i = 0; i < nameFoulsSoccer.length; i++) {
     let p = document.createElement('p');
     div.append(p);
-    p.innerHTML = `Nome squadra: ${nameFoulsSoccer[i].nome} e Falli subiti: ${nameFoulsSoccer[i].falliSubiti}`;
+    p.innerHTML = `${nameFoulsSoccer[i].nome} <br> Falli subiti: ${nameFoulsSoccer[i].falliSubiti}`;
 };
